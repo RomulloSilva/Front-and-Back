@@ -1,1 +1,8 @@
-<p>catalogo works!</p>
+<div class="row" *ngFor="let ITEM of lista">
+    <div class="col-md-12">
+        <h3>{{ITEM.anoDePublicacao}} - {{ITEM.titulo}}</h3>
+        <p><strong>Estante:</strong> {{ITEM.estante}}</p>
+        <p><strong>Prateleira:</strong> {{ITEM.prateleira}}</p>
+        <hr/>
+    </div>
+</div>

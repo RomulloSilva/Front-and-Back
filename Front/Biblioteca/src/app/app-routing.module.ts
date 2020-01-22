@@ -4,6 +4,7 @@ import { HomeComponent } from './componentes/home/home.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { CatalogoComponent } from './componentes/catalogo/catalogo.component';
 import { LogoutComponent } from './componentes/logout/logout.component';
+import {TituloComponent} from '././componentes/titulo/titulo.component';
 
 
 const routes: Routes = [

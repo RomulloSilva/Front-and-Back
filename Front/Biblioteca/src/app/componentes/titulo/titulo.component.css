@@ -1,0 +1,12 @@
+.container{
+    border-radius: 5px;
+    color: tomato;
+    font-family: 'Oswald', sans-serif;
+}
+
+#conteudoCard{
+    color: tomato;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+
+}

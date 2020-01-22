@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {Livro} from '../../model/Livro';
+import {LivroService} from '../../servicos/livro.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-catalogo',
@@ -7,9 +10,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CatalogoComponent implements OnInit {
 
-  constructor() { }
+
+  lista: Livro[];//criamos uma var que armazenará todos os livros no formato da classe criada.
+
+  constructor(private srv: LivroService, private route: Router) { }
 
   ngOnInit() {
+
+    if(localStorage.getItem("romuloToken")){
+      this.srv.getAllLivros().subscribe((res: Livro[])=>{
+        console.log(res);
+        this.lista = res;
+      },
+      (err)=>{
+        this.route.navigate(['/home']);
+      }
+      );
+    }else{
+      this.route.navigate(['/home']);
+    }
+
   }
 
 }
