@@ -32,4 +32,8 @@ export class CatalogoComponent implements OnInit {
 
   }
 
+  public reservar(){
+    alert("Função não disponível no momento");
+  }
+
 }
