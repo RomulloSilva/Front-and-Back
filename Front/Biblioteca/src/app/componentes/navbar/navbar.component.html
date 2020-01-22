@@ -1,8 +1,8 @@
 <div class="container">
     <div class="row mt-2 d-flex justify-content-center mb-2">
         <div class="col-md-12">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a class="navbar-brand" href="#">Biblioteca</a>
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand texto" href="#">Biblioteca</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false"
                     aria-label="Alterna navegação">
@@ -11,29 +11,29 @@
                 <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
                     <ul class="navbar-nav mr-auto" id="conteudoNavbar">
                         <li class="nav-item active">
-                            <a class="nav-link" [routerLink]="'/home'">Home <span class="sr-only">(página
+                            <a class="nav-link texto" [routerLink]="'/home'">Home <span class="sr-only">(página
                                     atual)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" [routerLink]="'/login'">Login</a>
+                            <a class="nav-link texto" [routerLink]="'/login'">Login</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" [routerLink]="'/logout'">Logout</a>
+                            <a class="nav-link texto" [routerLink]="'/logout'">Logout</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            <a class=" texto nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Dropdown
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" [routerLink]="'/catalogo'">catálogo</a>
+                                <a class="dropdown-item texto" [routerLink]="'/catalogo'">catálogo</a>
                             </div>
                         </li>
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
                         <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar"
                             aria-label="Pesquisar">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+                        <button class=" texto btn btn-outline-secondary my-2 my-sm-0" type="submit">Pesquisar</button>
                     </form>
                 </div>
             </nav>
